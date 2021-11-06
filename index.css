@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: url("./images/bg-desktop.svg"), linear-gradient( hsl(257, 40%, 49%), hsl(257, 40%, 49%));  
+    background-size: cover;
+}
+
+.container {
+    /* min-height: 100vh; */
+    padding: 2.5rem 3.5rem 0rem 3.5rem;
+}
+.banner-holder {
+    height: 70vh;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 4rem; */
+    color: white;
+}
+.left-div {
+    width: 60%;
+}
+.right-holder {
+    margin-top: 1.2rem;
+    width: 33%;
+}
+.right-holder p {
+    line-height: 1.6;
+}
+.header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+}
+
+button {
+    background-color: hsl(300, 69%, 71%);
+    padding: 1.2rem 3rem;
+    width: 60%;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    margin-top: 1.5rem;
+}
+.social-round {
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.social-round:hover {
+    border: 2px solid hsl(300, 69%, 71%);
+}
+.icon {
+    color: white;
+    font-size: 1.5rem;
+}
+.icon:hover {
+    color: hsl(300, 69%, 71%);
+}
+.social {
+    /* margin-top: -1rem; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    padding: 0rem 3.5rem;
+}
+ footer {
+        font-size: 12px;
+        display: none;
+    }
+
+@media screen and (max-width: 760px){
+    body {
+        font-size: 14px;
+    }
+    .container {
+        background-size: cover;
+        padding: 2rem 1.5rem 0rem 1.5rem;
+    }
+    .banner-holder {
+        /* height: 0vh; */
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* gap: 4rem; */
+        color: white;
+        width: 100%;
+        text-align: center;
+    }
+    .left-div {
+        width: 90%;
+    }
+    .right-holder {
+        margin-top: 1.2rem;
+        width: 80%;
+    }
+    .social {
+        justify-content: center;
+        margin: 2rem 0;
+        
+    }
+    .logo {
+        width: 30vw
+    }
+    .header {
+        font-size: 1rem;
+    }
+    button {
+        background-color: white;
+        width: 60vw;
+        padding: 1rem 3rem;
+        color: black;
+        border: none;
+        border-radius: 25px;
+        margin-top: 1.5rem;
+    }
+    button:hover {
+        background-color: hsl(300, 69%, 71%);
+    }
+   
+}
